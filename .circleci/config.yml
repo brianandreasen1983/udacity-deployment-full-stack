@@ -16,17 +16,17 @@ jobs:
         - run:
           command: npm run build
           name: build API
-  build_UI:
-      docker: 
-      - image: cimg/node:16.3.1
-      steps:
-        - checkout
-        - run:
-          command: npm install
-          name: Run package installation
-        - run:
-          command: npm run build
-          name: build API
+  # build_UI:
+  #     docker: 
+  #       - image: cimg/node:16.3.1
+  #     steps:
+  #       - checkout
+  #       - run:
+  #         command: npm install
+  #         name: Run package installation
+  #       - run:
+  #         command: npm run build
+  #         name: build API
 
   say-hello:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
@@ -48,4 +48,4 @@ workflows:
     jobs:
       - say-hello
       - build_API
-      - build_UI
+      # - build_UI
