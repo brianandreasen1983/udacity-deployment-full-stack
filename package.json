@@ -4,7 +4,8 @@
         "frontend:install": "export SET NODE_OPTIONS=--openssl-legacy-provider && cd udagram/udagram-frontend && npm install",
         "backend:install": "export SET NODE_OPTIONS=--openssl-legacy-provider && cd udagram/udagram-api && npm install",
         "frontend:build": "export SET NODE_OPTIONS=--openssl-legacy-provider && cd udagram/udagram-frontend && npm run build",
-        "backend:build": "export SET NODE_OPTIONS=--openssl-legacy-provider && cd udagram/udagram-api && npm run build"
+        "backend:build": "export SET NODE_OPTIONS=--openssl-legacy-provider && cd udagram/udagram-api && npm run build",
+        "frontend:depoy" : "cd udagram/udagram-frontend && npm run deploy"
     },
     "devDependencies": {}
 }
