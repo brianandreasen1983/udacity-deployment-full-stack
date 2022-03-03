@@ -15,5 +15,5 @@ jobs:
             npm run frontend:install
      - run: 
           name: Front-End Build
-          command: |
+         command: |
             npm run frontend:build
