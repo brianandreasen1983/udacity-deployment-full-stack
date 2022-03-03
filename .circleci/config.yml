@@ -5,11 +5,10 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:stable"
+      - image: "cimg/node:17.2.0"
     steps:
       - node/install
       - checkout
-      - pwd
       - run:
           name: Back-End Install
           command: |
