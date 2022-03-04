@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import cors from "cors";
 import express from "express";
 import { sequelize } from "./sequelize";
@@ -33,7 +33,8 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   // Start the Server
   app.listen(port, () => {
-    console.log(`server running ${process.env.URL}`);
+    // console.log(`server running ${process.env.URL}`);
+    console.log(port)
     console.log(`press CTRL+C to stop server`);
   });
 })();
